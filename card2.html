@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>document </title>
+<style>
+  *{margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 100px 0 50px;
+}
+.container .card{
+    position: relative;
+    min-width: 320px;
+    height: 500px;
+    box-sizing: border-box;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),inset -5px -5px 15px rgba(255,255,255,0.1),5px 5px 15px
+    rgba(0,0,0.3),-5px -5px 15px rgba(255,255,255,0.1);
+    border-radius: 15px;
+    margin: 30px;
+  background:  #2a2b2f;
+}
+.container .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 15px;
+    background: gray;
+    border: 2px solid #1e1f23;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s;
+}
+.container .card:hover .box
+{
+    transform: translateY(-50px)
+}
+.container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+.container .card .box .content .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: red;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px
+    
+}
+.container .card .box .content .icon .fa{
+    color: white;
+    font-size: 2rem;
+}
+.container .card .box .content h3{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+}
+.container .card .box .content h4{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+.container .card .box .content h4 sup{
+    font-weight: 300;
+    font-size: 0.75em;
+}
+ul{
+    position: relative
+}
+li{
+    list-style: none;
+    
+}
+.fa-check{
+    color: greenyellow;
+    margin-right: 5px;
+    
+}
+.fa-times{
+    color: red;
+    margin-right: 5px;
+    
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+}
+.container .card:nth-child(1) .box .content a,
+.container .card:nth-child(1) .box .content .icon{
+    background: blue;
+    
+}
+.container .card:nth-child(2) .box .content a,
+.container .card:nth-child(2) .box .content .icon{
+    background: #e91e63;
+    
+}
+.container .card:nth-child(3) .box .content a,
+.container .card:nth-child(3) .box .content .icon{
+    background: #97dc47;
+    
+}
+
+  
+    
+</style>
+</head>
+<body>
+    <div class="container">
+     <div class="card">
+         <div class="box">
+             <div class="content">
+                 <div class="icon"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></div>
+                 <h3>basic</h3>
+                 <h4><sup>$</sup>25</h4>
+                 <ul>
+                 <li><i class="fa fa-check" aria-hidden="true"></i>10 Gp Space</li>
+                 <li><i class="fa fa-check" aria-hidden="true"></i>3 domain name</li>
+                 <li><i class="fa fa-check" aria-hidden="true"></i>10 email address</li>
+                 <li><i class="fa fa-times" aria-hidden="true"></i>live sport</li>
+                 </ul>
+                 <a href="#">order now</a>
+             </div>
+         </div>
+     </div>
+        
+             <div class="card">
+         <div class="box">
+             <div class="content">
+                 <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+                 <h3>standard</h3>
+                 <h4><sup>$</sup>50</h4>
+                 <ul>
+                 <li><i class="fa fa-check" aria-hidden="true"></i>20 Gp Space</li>
+                 <li><i class="fa fa-check" aria-hidden="true"></i>5 domain name</li>
+                 <li><i class="fa fa-check" aria-hidden="true"></i>20 email address</li>
+                 <li><i class="fa fa-times" aria-hidden="true"></i>live sport</li>
+                 </ul>
+                 <a href="#">order now</a>
+             </div>
+         </div>
+     </div>
+        
+             <div class="card">
+         <div class="box">
+             <div class="content">
+                 <div class="icon"><i class="fa fa-rocket" aria-hidden="true"></i></div>
+                 <h3>premium</h3>
+                 <h4><sup>$</sup>100</h4>
+                 <ul>
+                 <li><i class="fa fa-check" aria-hidden="true"></i>50 Gp Space</li>
+                 <li><i class="fa fa-check" aria-hidden="true"></i>10 domain name</li>
+                 <li><i class="fa fa-check" aria-hidden="true"></i>50 email address</li>
+                 <li><i class="fa fa-times" aria-hidden="true"></i>live sport</li>
+                 </ul>
+                 <a href="#">order now</a>
+             </div>
+         </div>
+     </div>
+    </div>
+</body>
+</html>
